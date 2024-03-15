@@ -1,11 +1,17 @@
 const express = require("express");
+const {PORT} = require("./config/serverConfig")
+
 const bodyParser = require("body-parser");
 
-function ServerFlightSearch() {
-  const app = express();
-  app.listen(3000, () => {
-    console.log("Server started at 3000");
-  });
+const ServerFlightSearch = () => {
+
+   // create the express server
+   const app = express();
+
+   app.listen(PORT, () => {
+     console.log(`Server started at ${PORT}`);
+   });
+
 }
 
 ServerFlightSearch();
