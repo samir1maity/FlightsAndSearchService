@@ -13,7 +13,10 @@ const ServerFlightSearch = () => {
 
   app.listen(PORT, () => {
     console.log(`Server started at ${PORT}`);
+<<<<<<< HEAD
    
+=======
+>>>>>>> bb5959c125198bb97008e97473fcd25e5cd41bf8
   });
 
 };
