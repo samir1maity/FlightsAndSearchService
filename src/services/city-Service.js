@@ -45,6 +45,14 @@ class CityService {
         }
 
     }
+
+    async getAllCity() {
+        try {
+            
+        } catch (error) {
+            
+        }
+    }
 }
 
 module.exports = CityService;
