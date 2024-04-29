@@ -11,12 +11,13 @@ const setUpServerFlightSearch = async () => {
 
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
-  app.use('/Api',ApiRoute)
+  app.use('/Api', ApiRoute)
 
-  app.listen(PORT, () => {
+  // db.sequelize.sync({ alter: true })   -> db sync
+
+  app.listen(PORT, async () => {
     console.log(`Server started at ${PORT}`);
   });
-
 };
 
 setUpServerFlightSearch();
