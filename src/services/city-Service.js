@@ -46,11 +46,12 @@ class CityService {
 
     }
 
-    async getAllCity() {
+    async getAllCity(filter) {
         try {
-            
+            const City = this.cityRepository.getAllCity({name : filter.name})
+            return City
         } catch (error) {
-            
+            console.log('error occur in service layer', error)
         }
     }
 }
