@@ -13,13 +13,15 @@ const setUpServerFlightSearch = async () => {
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use('/Api', ApiRoute)
 
+  const db = require('./models/index')
+
 
   // db.sequelize.sync({ alter: true })   -> db sync
 
   app.listen(PORT, async () => {
 
     console.log(`Server started at ${PORT}`);
-
+    console.log(db.Airplane)
   });
 };
 

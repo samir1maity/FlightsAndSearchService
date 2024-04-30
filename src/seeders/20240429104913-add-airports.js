@@ -13,32 +13,32 @@ module.exports = {
      * }], {});
     */
 
-    await queryInterface.bulkInsert('Airports', [
-      {
-        name: "Netaji Subhas Chandra Bose International Airport",
-        cityId: 3,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        name: "Indira Gandhi International Airport",
-        cityId: 4,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        name: "Bagdogra International Airport",
-        cityId: 3,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      },
-      {
-        name: "Safdarjung Airport",
-        cityId: 4,
-        createdAt: new Date(),
-        updatedAt: new Date()
-      }
-    ], {})
+    // await queryInterface.bulkInsert('Airports', [
+    //   {
+    //     name: "Netaji Subhas Chandra Bose International Airport",
+    //     cityId: 3,
+    //     createdAt: new Date(),
+    //     updatedAt: new Date()
+    //   },
+    //   {
+    //     name: "Indira Gandhi International Airport",
+    //     cityId: 4,
+    //     createdAt: new Date(),
+    //     updatedAt: new Date()
+    //   },
+    //   {
+    //     name: "Bagdogra International Airport",
+    //     cityId: 3,
+    //     createdAt: new Date(),
+    //     updatedAt: new Date()
+    //   },
+    //   {
+    //     name: "Safdarjung Airport",
+    //     cityId: 4,
+    //     createdAt: new Date(),
+    //     updatedAt: new Date()
+    //   }
+    // ], {})
   },
 
   async down(queryInterface, Sequelize) {
